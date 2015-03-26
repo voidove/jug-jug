@@ -1,0 +1,61 @@
+body {
+  font-family: Arial;
+  font-size: 12px;
+}
+
+.header {
+  background-color: #1C709D;
+  height: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  vertical-align: top;
+}
+
+.header-left {
+  display: inline-block;
+  height: 60px;
+  line-height: 55px;
+}
+
+.header-right {
+  line-height: 60px;
+  float: right;
+  display: inline-block;
+  height: 60px;
+}
+
+.service-phone {
+  background: url("../image/BTN_Phone_15x15.png") no-repeat center left;
+  padding-left: 25px;
+  margin-right: 20px;
+  display: inline-block;
+  height: 60px;
+}
+
+.header-right label,
+.header-right a {
+  color: #FFF;
+  font-weight: normal;
+  margin-bottom: 0;
+  cursor: pointer;
+  height: 60px;
+}
+
+.suggestion {
+  background: url("../image/BTN_Suggtion_15x12.png") no-repeat center left;
+  padding-left: 25px;
+  margin-right: 20px;
+  display: inline-block;
+  height: 60px;
+  vertical-align: top;
+}
+
+.foot-info {
+  text-align: center;
+  color: #666;
+  padding-top: 10px;
+}
+
+tbody {
+  font-size: 14px;
+}

@@ -1,0 +1,57 @@
+<div class="container-wrapper">
+  <div class="container-top">
+    <div class="container-left">
+      <div id="carousel-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="image/IMG_Picture1_735x200.png" alt="First Slide">
+          </div>
+          <div class="item">
+            <img src="image/IMG_Picture2_735x200.png" alt="Second Slide">
+          </div>
+          <div class="item">
+            <img src="image/IMG_Picture3_735x200.png" alt="Three Slide">
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </div>
+  
+    <div class="container-right">
+      <div class="notice-header">
+        <div class="notice-label">Notices</div><div class="notice-more"><a href="#/notice">More >></a></div>
+      </div>
+      <div class="latest-notice-list" ng-controller="NoticeListCtrl">
+        <ul>
+          <li ng-repeat="notice in noticelist"><span><a href="#/notice/{{notice.id}}">{{notice.title}}</a><lable>{{notice.create_time}}</label></span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-middle">
+    <div class="app-search"><input type="text" class="search-input" placeholder="" ng-model="query"><span class="search-btn"></span></div>
+    <div class="iap-admin-wrapper"><a class="iap-admin" href="http://192.168.4.61/AdminConsole/downloadSDK.jsp" target="_blank"><label>IAP Admin</label></a></div>
+    <div class="app-page-index"></div>
+  </div>
+  <div class="container-bottom" ng-controller="AppListCtrl">
+    <ul class="app-list">
+      <li ng-repeat="app in applist | filter:query" class="oneApp"><a title="{{app.fullName}}" href="{{app.url}}" target="_blank"><img ng-src="{{app.imageUrl}}"></a><span>{{app.shortName}}</span></li>
+    </ul>
+  </div>
+</div>

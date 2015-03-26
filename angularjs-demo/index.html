@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="portalApp">
+<head>
+<meta charset="utf-8">
+<title>Portal</title>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/notice.css">
+
+</head>
+<body>
+  <div class="header">
+    <div class="header-left">
+      <a class="aug-logo" href="#/">
+        <img src="image/LOGO_200X30.png">
+      </a>
+    </div>
+    <div class="header-right">
+      <span class="service-phone"><label>Service Telephone</label></span><span class="suggestion"><a href="mailto:Eriksson.Luo@augmentum.com?subject=[IES] Suggestions for IES">Suggestion</a></span>
+      <span class="i18n"></span>
+    </div>
+  </div>
+  
+  <div ng-view></div>
+
+  <div class="foot-info">Copyright || 2014 Augmentum, Inc. All Rights Reserved</div>
+
+</body>
+<script src="dependencies/jquery-1.11.1.min.js"></script>
+<script src="dependencies/angular.js"></script>
+<script src="dependencies/angular-route.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controllers.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+  $('.service-phone').popover({
+    trigger: 'hover',
+    placement: 'bottom',
+    html: 'true',
+    content: "<table width='100%' border='0' cellpadding='0' cellspacing='0'>"
+  + "<tbody><tr><td></td><td>SH</td><td>WH</td></tr>"
+  + "<tr><td>IT:</td><td>345</td><td>320</td></tr>"
+  + "<tr><td>HR:</td><td>360</td><td>301</td></tr>"
+  + "<tr><td>Finance:</td><td>361</td><td>302</td></tr>"
+  + "<tr><td>IES:</td><td>557</td><td>557</td></tr>"
+  + " </tbody></table>",
+  });
+</script>
+</html>

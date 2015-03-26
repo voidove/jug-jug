@@ -1,0 +1,24 @@
+<div class="notice-wrapper">
+  <div class="notice-container-top">
+    <span><a href="#/">Home</a></span><span>> Notice</span>
+  </div>
+  
+  <div class="notice-container-middle">
+    <div class="notice-detail">
+    	<div class="notice-title">{{activeNotice.title}}</div>
+		<div class="notice-time">{{activeNotice.create_time}}</div>
+		<div class="notice-content">{{activeNotice.content}}</div>
+	</div>
+	<div class="notice-list-wrapper">
+	  <div class="notice-header">
+    	<div class="notice-label">Notices</div>
+        <div class="notice-index"><span class="prev"></span><span class="next"></span></div>
+      </div>
+	  <div class="notice-list">
+		<ul class="notice-list-ul">
+			<li ng-repeat="notice in noticelist" class="oneNotice" ng-click="setNotice(notice)"><span><a>{{notice.title}}</a><lable>{{notice.create_time}}</label></span></li>
+		</ul>
+	  </div>
+	</div>
+  </div>
+</div>

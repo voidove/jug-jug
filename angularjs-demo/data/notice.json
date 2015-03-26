@@ -1,0 +1,26 @@
+[
+	{
+	  "id":"iap-migration",
+	  "title":"[IAP] Migration of Internal Applications",
+	  "create_time":"2014-09-11",
+	  "content":"<p>It is planed to migrate some internal apps to a new server this Friday from 18:00 till 20:00. These apps (including DMP, KSP, EP, AMS, ITS, ITS-Admin and OE) will be unavailable during this period of time.</p><p>Let me know if you have any issues.</p>"
+	},
+	{
+	  "id":"its-publish",
+	  "title":"[ITS] Publish wordpress course",
+	  "create_time":"2014-09-12",
+	  "content":"Introduce basic knowledge of wordpress"
+	},
+	{
+	  "id":"ies-new-feature",
+	  "title":"[IES] New cash advance function has been added into IES.",
+	  "create_time":"2014-01-06",
+	  "content":" New cash advance function has been added into IES."
+	},
+	{
+      "id":"ies-module-update",
+	  "title":"[IES] IES leave module has been updated.",
+	  "create_time":"2013-02-28",
+	  "content":"IES leave module has been updated."
+	}
+]

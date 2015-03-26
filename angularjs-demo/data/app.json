@@ -1,0 +1,86 @@
+ [
+  {
+    "id": "ies",
+    "url": "",
+    "shortName":"IES (inside)",
+    "fullName":"Internal Employee System",
+    "imageUrl": "image/app/ies.png"
+  },
+  {
+    "id": "ies",
+    "url": "",
+    "shortName":"IES (outside)",
+    "fullName":"Internal Employee System",
+    "imageUrl": "image/app/ies.png"
+  },
+  {
+    "id": "dmp",
+    "url": "",
+    "shortName":"DMP",
+    "fullName":"Development Management Platform",
+    "imageUrl": "image/app/dmp.png"
+  },
+  {
+    "id": "its", 
+    "url": "",
+    "shortName":"ITS",
+    "fullName":"Internal Training System",
+    "imageUrl": "image/app/its.png"
+  },
+  {
+    "id": "oe", 
+    "url": "",
+    "shortName":"OE",
+    "fullName":"Online Exam",
+    "imageUrl": "image/app/oe.png"
+  },
+  {
+    "id": "layout", 
+    "url": "",
+    "shortName":"Layout",
+    "fullName":"Layout",
+    "imageUrl": "image/app/layout.png"
+  },
+  {
+    "id": "ams",
+    "url": "",
+    "shortName":"AMS",
+    "fullName":"Assets Management System",
+    "imageUrl": "image/app/ams.png"
+  },
+  {
+    "id": "ksp",
+    "url": "",
+    "shortName":"KSP",
+    "fullName":"Knowledge Share Platform",
+    "imageUrl": "image/app/ksp.png"
+  },
+  {
+    "id": "its-admin",
+    "url": "",
+    "shortName":"ITS-Admin",
+    "fullName":"ITS-Admin",
+    "imageUrl": "image/app/its-admin.png"
+  },
+  {
+    "id": "git",
+    "url": "",
+    "shortName":"Git",
+    "fullName":"Git",
+    "imageUrl": "image/app/git.png"
+  },
+  {
+    "id": "rotation", 
+    "url": "",
+    "shortName":"Rotation",
+    "fullName":"Rotation",
+    "imageUrl": "image/app/rotation.png"
+  },
+  {
+    "id": "email",
+    "url": "",
+    "shortName":"Email",
+    "fullName":"Email",
+    "imageUrl": "image/app/email.png"
+  }
+]

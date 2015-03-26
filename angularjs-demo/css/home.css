@@ -1,0 +1,184 @@
+.container-wrapper {
+  width: 1240px;
+  padding-top: 20px;
+  margin: 0 auto
+}
+
+.container-left {
+  float: left;
+  width: 735px;
+  margin-right: 20px;
+}
+
+.container-right {
+  float: left;
+  vertical-align: top;
+  padding: 10px 20px 15px 20px;
+  width: 480px;
+  height: 220px;
+}
+
+.notice-label {
+  float: left;
+  color: #2A2A2A;
+  font-size: 18px;
+}
+
+.notice-more {
+  float: right;
+  color: #1C709D;
+  font-size: 14px;
+}
+
+.app-list {
+  list-style-type: none;
+  padding: 15px 0 10px 20px;
+}
+
+.oneApp {
+  display: inline-block;
+  width: 190px;
+  margin-right: 10px;
+  padding: 15px 10px;
+}
+
+.app-list li img {
+  height: 60px;
+}
+
+.notice-header {
+  overflow: hidden;
+  border-bottom: 1px solid #1C709D;
+  padding-bottom: 5px;
+}
+
+.latest-notice-list ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.latest-notice-list ul li {
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.oneApp a {
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer; 
+}
+
+.oneApp span {
+  display: inline-block;
+  line-height: 64px;
+  vertical-align: top;
+  color: #333;
+  font-size: 14px;
+}
+
+.search-btn {
+  background: url("../image/BTN_Serch_30x20.png") no-repeat;
+  width: 30px;
+  height: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.search-input {
+  vertical-align: top;
+  height: 20px;
+  border: 1px solid #1C709D;
+  text-indent: 5px;
+  padding: 5px;
+}
+
+.app-search {
+  display: inline-block;
+}
+
+.iap-admin-wrapper {
+  display: inline-block;
+  float: right;
+  display: none;
+}
+
+.iap-admin {
+  background: url("../image/BTN_IAP_20x20.png") no-repeat;
+  padding-left: 30px;
+  margin-right: 30px;
+  display: inline-block;
+}
+
+.iap-admin label {
+  color: #333;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.container-middle {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  width: 1240px;
+}
+
+.container-bottom {
+  border-top: 1px solid #A3BBC7;
+  border-bottom: 1px solid #A3BBC7;
+  width: 1240px;
+}
+
+.latest-notice-list ul li span {
+  background: url("../image/BTN_PointB_8X8.png") no-repeat left top;
+  padding-left: 15px;
+}
+
+.latest-notice-list ul li a {
+  color: #2A2A2A;
+  font-size: 14px;
+  text-decoration: none;
+  width: 330px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.latest-notice-list ul li lable {
+  color: #999;
+  float: right;
+}
+
+.popover-content {
+  padding: 10px 20px;
+}
+
+.tipDiv {
+  height: 25px;
+}
+
+.popover {
+  line-height: 30px;
+}
+
+tbody tr td:nth-child(2) {
+  margin-right: 20px;
+  display: inline-block;
+  margin-left: 30px;
+  color: #4d4d4d;
+}
+
+tbody tr td:first-child {
+  font-weight: bold;
+  color: #1c709d;
+}
+
+tbody tr td:last-child {
+  color: #4d4d4d;
+}
+
+tbody tr:first-child td {
+  font-weight: bold;
+  color: #1c709d;
+}
