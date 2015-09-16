@@ -1,4 +1,4 @@
-jug-jug
+Olivia's working
 ========
 
-nothing, [just jug](https://github.com/voidove/jug-jug/issues)
+[some notes](https://github.com/voidove/jug-jug/issues)
