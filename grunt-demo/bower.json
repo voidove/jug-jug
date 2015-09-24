@@ -1,0 +1,23 @@
+{
+  "name": "demo",
+  "version": "0.0.1",
+  "authors": [
+    "olivia.wang"
+  ],
+  "description": "js lib",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.5.2"
+  }
+}

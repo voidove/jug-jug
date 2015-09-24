@@ -1,0 +1,21 @@
+{
+  "name": "grunt-demo",
+  "version": "1.0.0",
+  "description": "grunt demo",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt-bower-task": "^0.4.0",
+    "grunt-sass": "^1.0.0",
+    "load-grunt-tasks": "^3.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "olivia.wang",
+  "license": "ISC"
+}
