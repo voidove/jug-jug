@@ -1,0 +1,22 @@
+{
+  "name": "new show",
+  "version": "0.0.1",
+  "authors": [
+    "olivia.wang"
+  ],
+  "description": "js lib",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "foundation": "^5.5.3",
+    "mustache.js": "mustache#^2.3.0"
+  }
+}

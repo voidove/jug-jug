@@ -1,0 +1,21 @@
+{
+  "name": "new-show",
+  "version": "1.0.0",
+  "description": "photo show demo",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-sass": "^1.2.1",
+    "load-grunt-tasks": "^3.5.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "olivia.wang",
+  "license": "ISC"
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>New Show</title>
+  <link rel="stylesheet" type="text/css" href="build/main.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/foundation/css/foundation.css">
+</head>
+<body>
+  <div class="site-wrap">
+    <div class="off-canvas-wrap">
+      <aside class="hide-for-small-only">
+        <header role="banner">
+          <div class="branding">
+            <a class="logo">
+              <img alt="qiniu" src="https://oerugfbxb.qnssl.com/wp-content/themes/Earthshaker-1/images/logo.png">
+            </a>
+          </div>
+        </header>
+        <nav role="navigation">
+          <ul class="off-canvas-list">
+            <li>
+              <a>Time Line</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+    <main>
+      <header>
+        <div class="page-title-wrapper">
+          <h1 class="page-title">Time line</h1>
+        </div>
+      </header>
+      <div class="content">
+        <ul class="column small-block-grid-1 small-centered medium-block-grid-3 large-block-grid-4">
+        </ul>
+      </div>
+      <div class="add-photo-wrapper">
+        <a class="add-photo" href="#" data-reveal-id="myModal">
+          <span>+</span>
+        </a>
+
+        <!-- upload photo list page -->
+        <div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+          <h4>Total numbers</h4>
+          <div>
+            <header class="row">
+              <div class="column small-1">#</div>
+              <div class="column small-5">Name</div>
+              <div class="column small-2">Size</div>
+              <div class="column small-4">Progess</div>
+            </header>
+            <ul class="photo-list row">
+            </ul>
+          </div>
+          <footer>
+            <button class="secondary small right upload-photo">Upload...</button>
+          </footer>
+          <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="bower_components/foundation/js/foundation.js"></script>
+<script type="text/javascript" src="bower_components/foundation/js/foundation/foundation.reveal.js"></script>
+<script type="text/javascript" src="bower_components/mustache.js/mustache.min.js"></script>
+<script type="text/javascript" src="app/index.js"></script>
+</html>

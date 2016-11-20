@@ -1,0 +1,102 @@
+@import "../../bower_components/foundation/scss/foundation/functions";
+@import "_global.scss";
+
+$primary-color: #333 !default;
+$background-dark: #272727 !default;
+$background-light: #f8f8f8 !default;
+$border-color: #d3d3d3 !default;
+$header-font-family: 'Noto Serif', serif !default;
+
+.site-wrap {
+  aside {
+    width: rem-calc(200);
+    text-align: left;
+    background-color: $background-dark;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    header {
+      .branding {
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  main {
+    background-color: $background-light;
+    height: 100vh;
+    @media #{$medium-up} {
+      padding-left: rem-calc(200);
+    }
+    header {
+      padding: 0 30px;
+      border-bottom: 1px solid $border-color;
+      .page-title-wrapper {
+        padding: rem-calc(20) 0;
+        h1 {
+          font-size: rem-calc(30);
+          font-family: $header-font-family;
+        }
+      }
+
+    }
+    .content {
+      padding: rem-calc(20 12);
+      ul li {
+        a {
+          border: 1px solid $border-color;
+          padding: rem-calc(10);
+          min-height: rem-calc(140);
+          display: block;
+        }
+
+      }
+    }
+    .add-photo-wrapper {
+      position: fixed;
+      bottom: rem-calc(40);
+      right: rem-calc(40);
+      .add-photo {
+        background-color: $background-dark;
+        display: flex;
+        width: rem-calc(50);
+        height: rem-calc(50);
+        border-radius: 50%;
+        color: white;
+        font-size: rem-calc(40);
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.reveal-modal {
+  h4 {
+    border-bottom: 1px solid $border-color;
+    font-family: $header-font-family;
+  }
+  header {
+    border-bottom: 1px solid $border-color;
+    padding: rem-calc(10) 0;
+  }
+  ul li {
+    font-size: rem-calc(12);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $border-color;
+    padding: rem-calc(10) 0;
+    img {
+      width: rem-calc(130);
+    }
+  }
+  .upload-photo {
+    margin-top: rem-calc(10);
+  }
+}
