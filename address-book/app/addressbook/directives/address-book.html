@@ -1,0 +1,84 @@
+<div class="address-book">
+  <h1>Address Book</h1>
+  <button class="add-item" ng-disabled="isEditing" ng-click="addItem(); isEditing=true">Add</button>
+  <table class="table table-bordered table-striped">
+    <thead>
+    <tr>
+      <td>
+        <a href="#" ng-disabled="isEditing" ng-click="sortType = 'id'; sortReverse = !sortReverse">
+          ID
+          <span ng-show="sortType == 'id' && !sortReverse" class="sort-arrow sort-arrow-down"></span>
+          <span ng-show="sortType == 'id' && sortReverse" class="sort-arrow sort-arrow-up"></span>
+        </a>
+      </td>
+      <td>
+        <a href="#" ng-disabled="isEditing" ng-click="sortType = 'name'; sortReverse = !sortReverse">
+          Name
+          <span ng-show="sortType == 'name' && !sortReverse" class="sort-arrow sort-arrow-down"></span>
+          <span ng-show="sortType == 'name' && sortReverse" class="sort-arrow sort-arrow-up"></span>
+        </a>
+      </td>
+      <td>
+        <a href="#" ng-disabled="isEditing" ng-click="sortType = 'location'; sortReverse = !sortReverse">
+          Location
+          <span ng-show="sortType == 'location' && !sortReverse" class="sort-arrow sort-arrow-down"></span>
+          <span ng-show="sortType == 'location' && sortReverse" class="sort-arrow sort-arrow-up"></span>
+        </a>
+      </td>
+      <td>
+        <a href="#" ng-disabled="isEditing" ng-click="sortType = 'office'; sortReverse = !sortReverse">
+          Office
+          <span ng-show="sortType == 'office' && !sortReverse" class="sort-arrow sort-arrow-down"></span>
+          <span ng-show="sortType == 'office' && sortReverse" class="sort-arrow sort-arrow-up"></span>
+        </a>
+      </td>
+      <td>
+        <a href="#" ng-disabled="isEditing" ng-click="sortType = 'cell-phone'; sortReverse = !sortReverse">
+          Cell Phone
+          <span ng-show="sortType == 'cell-phone' && !sortReverse" class="sort-arrow sort-arrow-down"></span>
+          <span ng-show="sortType == 'cell-phone' && sortReverse" class="sort-arrow sort-arrow-up"></span>
+        </a>
+      </td>
+      <td></td>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr ng-repeat="addressItem in addressItems | orderBy:sortType:sortReverse">
+      <td class="id">{{addressItem.id}}</td>
+      <td class="name">
+        <span ng-hide="$last && isEditing">{{addressItem.name}}</span>
+        <input type="text" ng-show="$last && isEditing" ng-model="addressItem.name"
+               ng-change="isValueChanged=true"/>
+      </td>
+      <td class="location">
+        <span ng-hide="$last && isEditing">{{addressItem.location}}</span>
+        <input type="text" ng-show="$last && isEditing" ng-model="addressItem.location"
+               ng-change="isValueChanged=true"/>
+      </td>
+      <td class="office">
+        <span ng-hide="$last && isEditing">{{addressItem.office}}</span>
+        <input type="text" ng-show="$last && isEditing" ng-model="addressItem.office"
+               ng-change="isValueChanged=true"/>
+      </td>
+      <td class="cell-phone" ng-dblclick="editMode = true">
+        <div ng-if="$last">
+          <span ng-hide="isEditing">{{addressItem.cellPhone}}</span>
+          <input type="text" ng-show="isEditing" ng-dblclick="isEditing=true" ng-model="addressItem.cellPhone"
+                 ng-change="$parent.isValueChanged=true"/>
+        </div>
+        <div ng-if="!$last">
+          <span ng-hide="editMode">{{addressItem.cellPhone}}</span>
+          <input type="text" ng-show="editMode" ng-dblclick="editMode=true" ng-model="addressItem.cellPhone"
+                 ng-change="$parent.isValueChanged=true"/>
+        </div>
+      </td>
+      <td>
+        <button class="delete-item" ng-disabled="isEditing" ng-click="deleteItem(addressItem)">Delete</button>
+        <button class="save-item" ng-disabled="!isValueChanged"
+                ng-click="updateItem(addressItem); isValueChanged=false; editMode=false; isEditing=false">Save</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
