@@ -5,8 +5,17 @@
   <title>Address Book</title>
 </head>
 <body ng-app="addressBookApp">
-  <div class="address-book-wrapper" ng-controller="addressBookCtrl">
-    <address-book></address-book>
+  <!-- NAVIGATION -->
+  <nav class="navbar" role="navigation">
+    <ul class="nav navbar-nav">
+      <li><a ui-sref="home" ui-sref-active="active">Home</a></li>
+      <li><a ui-sref="about" ui-sref-active="active">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+    <div ui-view></div>
   </div>
 <script src="bundle.js"></script>
 </body>
