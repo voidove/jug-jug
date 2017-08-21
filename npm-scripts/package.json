@@ -1,0 +1,40 @@
+{
+  "name": "npm-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --output-style compressed -o build/styles/ app/styles/",
+    "autoprefixer": "postcss -u autoprefixer -r build/styles/*",
+    "tsc": "tsc",
+    "tslint": "tslint -c tslint.json app/**/*.ts",
+    "build:css": "npm run scss && npm run autoprefixer",
+    "build:js": "npm run tsc && npm run tslint",
+    "build": "npm run build:js && npm run build:css",
+    "watch:css": "watch 'npm run build:css' app/styles/",
+    "watch:js": "watch 'npm run build:js' app/",
+    "build:watch": "parallelshell 'npm run watch:js' 'npm run watch:css'",
+    "livereload": "live-reload --port 3001 build/",
+    "clean": "rm -r build/*",
+    "dev": "parallelshell 'npm start' 'npm run build:watch' 'npm run livereload'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "clean": "latest",
+    "live-reload": "latest",
+    "parallelshell": "latest",
+    "postcss-cli": "latest",
+    "tslint": "latest",
+    "typescript": "latest",
+    "watch": "latest"
+  },
+  "dependencies": {
+    "express": "latest",
+    "lodash": "latest"
+  }
+}

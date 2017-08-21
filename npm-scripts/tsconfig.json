@@ -1,0 +1,41 @@
+{
+  "description": "This tsconfig file is used to build the main application",
+  "compilerOptions": {
+    "target": "es5",
+    "module": "amd",
+    "baseUrl": ".",
+    "rootDir": "./app/",
+    "paths": {
+      "*": [
+        "app/*",
+        "app/components/*"
+      ]
+    },
+    "declaration": false,
+    "removeComments": false,
+    "noLib": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "inlineSources": true,
+    "pretty": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noImplicitAny": true,
+    "noImplicitReturns": false,
+    "noImplicitUseStrict": false,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "outDir": "build/develop"
+  },
+  "files": [
+    "app/app.ts"
+  ],
+  "include": [
+    "app/**/*"
+  ],
+  "exclude": [
+    "node_modules/**/*.*"
+  ],
+  "compileOnSave": false
+}
